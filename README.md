@@ -1,9 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nextjs + Firebase 9
+## Features
 
-## Getting Started
+- authentication with google
 
-First, run the development server:
+## Before run the project
+- Firebase should be configured properly with google provider enabled
+- Setup .env.local file with firebase config like this
+    ```
+    NEXTAUTH_URL=http://localhost:3000
+    SECRET=your_secret
+    NEXT_PUBLIC_FIREBASE_API_KEY=
+    NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
+    NEXT_PUBLIC_FIREBASE_PROJECT_ID=
+    NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
+    NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=
+    NEXT_PUBLIC_FIREBASE_APP_ID=
+    ```
 
+## Getting start
 ```bash
 npm run dev
 # or
